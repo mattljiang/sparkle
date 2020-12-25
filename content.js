@@ -8,17 +8,14 @@ chrome.storage.sync.get(['identity'], (result) => {
   const identity = result.identity;
 
   // choose pictures based on identity
-  let imageNames;
   let imageUrls;
   if (identity === 'mom') {
     imageUrls = momImageUrls;
   } else {
     imageUrls = dadImageUrls;
   }
-  console.log(imageNames);
-  console.log(imageUrls);
   
-  const frequency = 7;
+  const frequency = Math.round(Math.random() + 2);
   
   const replaceImages = () => {
     const images = document.querySelectorAll('img');
@@ -32,5 +29,4 @@ chrome.storage.sync.get(['identity'], (result) => {
   
   // constantly replace images that lazy load
   setInterval(replaceImages, 100)
-  console.log('should have set interval now')
 });
