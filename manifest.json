@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Kaleidoscope",
+  "version": "1.0",
+  "description": "A more fun experience when you browse the internet.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./main.js"]
+    }
+  ]
+}
