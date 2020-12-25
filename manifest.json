@@ -16,5 +16,8 @@
   },
   "permissions": [
     "storage"
-  ]
+  ],
+  "icons": {
+    "96": "sparkle.png"
+  }
 }
