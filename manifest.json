@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Kaleidoscope",
+  "name": "Sparkle",
   "version": "1.0",
   "description": "A more fun experience when you browse the internet.",
   "content_scripts": [
@@ -9,8 +9,12 @@
       "js": ["content.js"]
     }
   ], 
-  "web_accessible_resources": ["images/*", "newtab.jpg"],
+  "options_page": "options.html",
+  "web_accessible_resources": ["images-dad/*", "images-mom/*", "newtab.jpg"],
   "chrome_url_overrides" : {
     "newtab": "newtab.html"
-  }
+  },
+  "permissions": [
+    "storage"
+  ]
 }

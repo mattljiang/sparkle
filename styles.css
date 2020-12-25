@@ -34,3 +34,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+label, select, button {
+  font-size: 3vw;
+}
+
+label, select {
+  display: inline;
+}
